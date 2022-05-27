@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SmartShop</string>
+    <string name="title_home">Home</string>
+    <string name="title_fd">fd</string>
+    <string name="title_user">user</string>
+    <string-array name="type">
+        <item>美食</item>
+        <item>服裝</item>
+        <item>運動</item>
+        <item>家電</item>
+        <item>家具</item>
+        <item>其他</item>
+    </string-array>
+</resources>

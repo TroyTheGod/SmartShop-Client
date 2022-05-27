@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/graylight"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF4081"
+            android:textColor="#FFF"
+            android:text="店主主頁"/>
+        <Button
+            android:id="@+id/hold"
+            android:textColor="#fff"
+            android:background="#ff0000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="保留貨品"
+            android:textSize="50dp"/>
+
+        <Button
+            android:id="@+id/storestuffprofile"
+            android:textColor="#fff"
+            android:background="#ff8000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="商店資料"
+            android:textSize="50dp"/>
+
+        <Button
+            android:id="@+id/manage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#4bb6ef"
+            android:text="管理商店"
+            android:textColor="#fff"
+            android:textSize="50dp" />
+
+        <Button
+            android:id="@+id/Addproduct"
+            android:textColor="#fff"
+            android:background="#00ffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="增加商品"
+            android:textSize="50dp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

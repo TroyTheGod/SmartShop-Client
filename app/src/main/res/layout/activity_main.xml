@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:label="@string/app_name"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/startblue">
+
+
+            <!--
+            <SearchView
+                android:id="@+id/SearchView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search here"/>
+                -->
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="19" />
+
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="分類"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="68dp" />
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/Food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="#FFF000"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/foodicon"
+                    tools:layout_editor_absoluteY="104dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/Clothes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="#ff00bf"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/clothesicon"
+                    android:text="服裝"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="172dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/Sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="#ff8000"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sporticon"
+                    android:text="運動"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="231dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/HA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="#0040ff"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/haicon"
+                    android:text="家電"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="290dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/FU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="#00ff00"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/fuicon"
+                    android:text="家具"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="351dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/Other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="#9f6060"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/othersicon"
+                    android:text="其他"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="407dp" />
+
+                <TextView
+                    android:textSize="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""/>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
